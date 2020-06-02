@@ -110,18 +110,23 @@
 			<!-- Form Confirmation -->
 			<article id="confirmation">
 				<h2 class="major">Confirmation</h2>
-				<p>Contact form sucessfully submitted!</p>
+				<p>Your message sent sucessfully! I will do my best to get back to you as soon as possible!</p>
+			</article>
+
+			<article id="failure">
+				<h2 class="major">Error!</h2>
+				<p>Looks like <a href="https://formspree.io/">Formspree</a> was unable to send your message. Please try
+					again later!</p>
 			</article>
 
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contact</h2>
-				<form method="post" action="https://formspree.io/xjvawkdl">
+				<form id="form" method="post" action="https://formspree.io/xjvawkdl">
 					<div class="fields">
 						<div class="field half">
 							<label for="name">Name</label>
 							<input required type="text" name="name" id="name" />
-							<input type="hidden" name="_next" value="https://ianmagenta.github.io/#confirmation" />
 						</div>
 						<div class="field half">
 							<label for="email">Email</label>
@@ -146,6 +151,9 @@
 								class="label">LinkedIn</span></a></li>
 					<li><a href="https://angel.co/u/ian-magenta-1" class="icon brands fa-angellist"><span
 								class="label">AngelList</span></a></li>
+					<li><a href="https://docs.google.com/document/d/1cgQhr441DvcTbSBkq_uM7yJMPainH-jQ2K5cG2XyWec/edit?usp=sharing"
+							class="icon brands"><i class="fas fa-file"></i><span class="label">Resume</span></a>
+					</li>
 				</ul>
 			</article>
 
@@ -416,6 +424,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/form.js"></script>
 
 </body>
 
